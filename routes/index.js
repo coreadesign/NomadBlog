@@ -1,7 +1,9 @@
-module.exports = function(app, User){
+var path = require('path');
+
+module.exports = function(app){
 
     app.get('/', function(req,res){
-      console.log('TEST SUCCESS');
+      res.sendFile(path.join(__dirname + '/../static/html/index.html'));
     });
 
 }

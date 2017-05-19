@@ -10,7 +10,7 @@ db.once('open', function(){
     console.log("Connected to mongod server");
 });
 
-mongoose.connect(process.env.NOMAD_DB_TEST);
+mongoose.connect(process.env.NOMAD_DB_BLOG_DEV);
 
 var User = require('./models/user');
 // var Post = require('./models/post');
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 8080;
 
 // [CONFIGURE ROUTER]
-var router = require('./routes')(app, User);
+var router = require('./routes')(app);
 
 // [RUN SERVER]
 var server = app.listen(port, function(){
