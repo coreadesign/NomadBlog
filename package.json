@@ -1,0 +1,30 @@
+{
+  "name": "nomad-blog",
+  "version": "1.0.0",
+  "description": "Nomad Blog",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TEAM-Nomad/NomadBlog.git"
+  },
+  "keywords": [
+    "nomad",
+    "node",
+    "mongodb",
+    "react"
+  ],
+  "author": "nomad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TEAM-Nomad/NomadBlog/issues"
+  },
+  "homepage": "https://github.com/TEAM-Nomad/NomadBlog#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.0"
+  }
+}
