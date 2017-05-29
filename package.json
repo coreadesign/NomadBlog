@@ -4,7 +4,7 @@
   "description": "Nomad Blog",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "mongoose": "^4.10.0"
+    "mongoose": "^4.10.0",
+    "ejs": "*"
   }
 }
